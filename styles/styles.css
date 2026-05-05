@@ -1,43 +1,50 @@
-body{
+body {
     width: 100vw;
     margin: 0px;
-    
+
 }
 
-p{
+p , h2{
     margin: 0px;
 }
 
+section {
+    border: solid black;
+    margin-bottom: 50px;
+}
 
-*{
+
+* {
     box-sizing: border-box;
 }
 
-#navbar{
+/* 
+navbar at the top, split into two parts */
+
+#navbar {
     width: 100vw;
     height: 120px;
-    /* border: solid green; */
+    /* give narbar a constaned height */
+    border-color: green;
 }
 
 
-
-#upper_navbar{
-
+#upper_navbar {
     width: 100%;
     background-color: blue;
     height: 40%;
     display: flex;
-    align-items: center;    /*Mssing up image size for some reaason, maybe need to constrain image size someohwo */
+    align-items: center;
     padding: 10px;
     gap: 10px;
 
 }
 
-#upper_navbar img{
+#upper_navbar img {
     height: 90%;
 }
 
-#lower_navbar{
+#lower_navbar {
     width: 100%;
     background-color: white;
     height: 60%;
@@ -45,8 +52,96 @@ p{
     gap: 10px;
     padding: 15px;
     align-items: center;
+
+}
+
+
+#recent_product_showcase{
+
+    border: red solid;
+
+
+}
+
+#showcase_container{
+
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    width: 100vw;
+
     
 }
+
+
+.showcase_container_item{
+
+    border: solid blue 2px;
+    width: 28%;
+    position: relative;
+    /* height: 40%; */
+    display: flex; 
+    background-repeat: no;
+    background-size: 100% 100%;
+    aspect-ratio: 0.75;
+    align-items: flex-end;
+    
+    
+}
+
+.showcase_container_item button{
+    height: 10%;
+    width: 25%;
+    border-radius: 25px;
+}
+
+
+
+#showcase_item_1{
+    background-color: green;
+    
+    top: -18%;
+    left: 5%;
+   
+
+    
+   
+    
+
+  
+
+}
+
+
+#showcase_item_2{
+    background-color: rgb(18, 56, 244);
+    
+    
+    
+    
+    
+
+  
+
+}
+
+#showcase_item_3{
+    background-color: rgb(214, 244, 18);
+    aspect-ratio: 0.8;
+    top: 18%;
+    right:5%;
+
+    
+
+  
+
+}
+
+
+
+
 
 
 
@@ -54,13 +149,12 @@ p{
 
 /* ulility classes for text */
 
-.navbar_text{
+.navbar_text {
     font-family: Helvetica, sans-serif;
     font-style: bold;
+    font-size: 100%;
 }
 
-.text-white{
+.text-white {
     color: white;
 }
-
-
