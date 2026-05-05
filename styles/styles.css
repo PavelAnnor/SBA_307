@@ -1,0 +1,66 @@
+body{
+    width: 100vw;
+    margin: 0px;
+    
+}
+
+p{
+    margin: 0px;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+#navbar{
+    width: 100vw;
+    height: 120px;
+    /* border: solid green; */
+}
+
+
+
+#upper_navbar{
+
+    width: 100%;
+    background-color: blue;
+    height: 40%;
+    display: flex;
+    align-items: center;    /*Mssing up image size for some reaason, maybe need to constrain image size someohwo */
+    padding: 10px;
+    gap: 10px;
+
+}
+
+#upper_navbar img{
+    height: 90%;
+}
+
+#lower_navbar{
+    width: 100%;
+    background-color: white;
+    height: 60%;
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    align-items: center;
+    
+}
+
+
+
+
+
+/* ulility classes for text */
+
+.navbar_text{
+    font-family: Helvetica, sans-serif;
+    font-style: bold;
+}
+
+.text-white{
+    color: white;
+}
+
+
