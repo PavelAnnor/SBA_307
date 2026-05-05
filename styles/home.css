@@ -1,0 +1,154 @@
+
+/* Section highlighting recent drops */
+#recent_product_showcase{
+    /* border: red solid; */
+}
+
+/* container for picture items */
+#showcase_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    width: 100vw;
+     margin-top: 20px;  
+}
+
+/* items in container  */
+.showcase_container_item{
+    border: solid blue 2px;
+    width: 28%;
+    position: relative;
+    /* height: 40%; */
+    display: flex; 
+    background-repeat: no;
+    background-size: 100% 100%;
+    aspect-ratio: 0.75;
+    align-items: flex-end;
+    transition: 1s;   
+}
+
+/* added transition, grow slightly larger and move above other shiblings to be better viewable */
+.showcase_container_item:hover{
+    transform: scale(1.2);
+    z-index: 3;
+}
+
+
+
+
+/* offsetting items to give design  */
+#showcase_item_1{
+    background-color: green;
+    top: -18%;
+    left: 5%; 
+}
+
+#showcase_item_2{
+    background-color: rgb(18, 56, 244);
+}
+
+#showcase_item_3{
+    background-color: rgb(214, 244, 18);
+    aspect-ratio: 0.8;
+    top: 18%;
+    right:5%;
+}
+
+
+
+
+
+
+
+
+
+/* ulility classes for text */
+
+
+.recent_products_showcase_header{
+    margin: 0px;
+    background-color: none;
+    font-family: Helvetica, sans-serif;
+    font-style: bold;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Gasoek One", sans-serif;
+     font-weight: 100;
+  font-style: normal;
+
+
+}
+
+.recent_products_showcase_text{
+    margin: 0px;
+    background-color: none;
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(108, 108, 111);
+
+
+}
+
+
+
+
+/* fonts imported */
+
+.gasoek-one-regular {
+  font-family: "Gasoek One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#slideshow{
+
+    width: 100%;
+    height: 800px;
+    padding: 0px;
+    display: flex;
+    background-color: black;
+
+}
+
+video{
+    width: 100%;
+    margin: 0px;
+    
+}
+
+
+#about_container{
+    display: flex;
+    width: 100vw;
+    height: 500px;
+    
+    justify-content: space-evenly;
+    
+}
+
+.about_container_col{
+    width: 32%;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+   
+}
+
+
+.about_container_col_header{
+
+    font-size: 20px;
+    font-style: normal;
+    
+    
+
+}
+
+.about_container_col img{
+    width: 30%;
+    height: auto;
+}
+

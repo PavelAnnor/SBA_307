@@ -5,10 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel = "stylesheet" href  = "./styles/gerneral.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap" rel="stylesheet">
+
+
+    <style>
+
+        #about h1{
+            background-color: rgb(0, 0, 248);
+            color: white;
+            font-size: 60px;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,50 +28,90 @@
 
         <div id="upper_navbar">
             <!-- might remove too simlar to nike and copy right lmaooo -->
-            <img src="./assets/icons/jordon_logo-white.png" alt="">.  
+            <img src="./assets/icons/jordon_logo-white.png" alt="">.
             <img src="./assets/icons/nike_logo-white.png" alt="">
-            <p class = "navbar_text text-white" style = "margin-left: auto;">Log In</p>
-            <p class = "navbar_text text-white">Register</p>
+
+            <p class="navbar_text text-white" style="margin-left: auto;">Account</p>
+            <a href="./register.html"><img src="./assets/icons/pfp_icon-white.png"></a>
         </div>
         <div id="lower_navbar">
-            <p class = "navbar_text">Kicks2Go</p>
-            <p style = "margin-left: auto;" class = "navbar_text">Footwear</p>
-            <p class = "navbar_text">Apparel</p>
-            <p class = "navbar_text">Contact</p>
+            <a href = "./home.html"><p class="navbar_text">Kicks2Go</p></a>
+            <p style="margin-left: auto;" class="navbar_text">Footwear</p>
+            <a href = "apparel.html"><p class="navbar_text">Apparel</p></a>
+            <p class="navbar_text">Contact</p>
         </div>
 
     </section>
 
-    <section id = "recent_product_showcase">
 
-        <h2 class = "recent_products_showcase_header">Product Showcase: Shai 001</h2>
-        <p class = "recent_products_showcase_text">Take a look at what just came in</p>
+    <section id="slideshow" style = "margin-top: 0px;">
 
-        <div id = "showcase_container">
+        <video src="./assets/videos/vid2.mp4" autoplay muted loop ></video>
 
-            <div class = "showcase_container_item" id = "showcase_item_1" style = "background-image: url(./assets/images/black_shoe.jpg);" >
-              
-                
+
+    </section>
+
+    <section id="recent_product_showcase">
+
+        <h2 class="recent_products_showcase_header">New Product Showcase: <span style="color:rgb(49, 49, 203)">Shai
+                001</span></h2>
+        <p class="recent_products_showcase_text">Take a look at what just came in</p>
+
+        <div id="showcase_container">
+
+            <div class="showcase_container_item" id="showcase_item_1"
+                style="background-image: url(./assets/images/black_shoe.jpg);">
+
+
             </div>
-            <div class = "showcase_container_item" id = "showcase_item_2" style="background-image: url(./assets/images/blue_shoe.jpg);" >
-              
+            <div class="showcase_container_item" id="showcase_item_2"
+                style="background-image: url(./assets/images/blue_shoe.jpg);">
+
             </div>
-            <div class = "showcase_container_item" id = "showcase_item_3" style = "background-image: url(./assets/images/brown_shoe.jpg);">
-              
+            <div class="showcase_container_item" id="showcase_item_3"
+                style="background-image: url(./assets/images/brown_shoe.jpg);">
+
             </div>
-           
+
         </div>
 
+
+
+    </section>
+
+
+    <section id = "about">
+
+        <h1 class = "recent_products_showcase_header">Why Kicks2Go?</h1>
         
+        <div id = "about_container">
 
+            <div class = "about_container_col">
+                <h3 class="about_container_col_header">Fast Shipping</h3>
+                <img src = "assets/icons/delivery-truck.png">
+                <p>Kicks2Go offers rapid shipping internationally. </p>
+            </div>
+
+            <div class = "about_container_col">
+                <h3 class="about_container_col_header">Stellar Pricing</h3>
+                <img src="./assets/icons/money-bag (1).png" alt="">
+            </div>
+
+            <div class = "about_container_col">
+                <h3 class="about_container_col_header">Vast Array</h3>
+                <img src = "./assets/icons/running-shoe.png">
+            </div>
+
+            
+        </div>
     </section>
 
 
-    <!-- <section id = "intro/video/slideshow"></section> -->
 
 
 
-  
+
+
 
 </body>
 
