@@ -1,6 +1,6 @@
 ---
-title: {{ SBA 307 }}
-date: {{ date }}
+title: SBA 307 
+date:  date 
 tags: #proyecto #idea
 status: idea
 prioridad: 
