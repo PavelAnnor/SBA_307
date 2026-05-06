@@ -1,0 +1,48 @@
+
+
+
+form{
+    width: 50%;
+   text-align: center;
+    border: solid rgb(28, 28, 30) 4px;
+    background-color: rgb(7, 7, 247);
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+hr{
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+button{
+    background-color: rgb(135, 157, 232);
+}
+
+
+
+
+.text_fields{
+    border-radius: 5px;
+    border: solid black 1px;
+    width: 80%;
+    height: 50px;
+    font-size: medium;
+    padding: 2px;
+    margin-bottom: 20px;
+    padding: 10px;
+    
+}
+
+
+
+

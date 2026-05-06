@@ -1,15 +1,17 @@
+/* List of styles that apply to elements that appear on all 3 pages  */
+
 body {
     width: 100%;
     margin: 0px;
-
 }
 
-p , h2{
+p,
+h2 {
     margin: 0px;
 }
 
 section:not(#navbar) {
-    /* border: solid black; */
+   
     margin-bottom: 50px;
 }
 
@@ -18,21 +20,24 @@ section:not(#navbar) {
     box-sizing: border-box;
 }
 
-a{
+a {
     height: 100%;
     display: flex;
     align-items: center;
     text-decoration: none;
 }
 
-/* 
-navbar at the top, split into two parts */
-
+/* navbar at the top, split into two parts */
 #navbar {
     width: 100vw;
     height: 130px;
     /* give narbar a constaned height */
     border-color: green;
+    position: fixed;
+    top: 0px;
+    z-index: 50;
+    border: black solid 1px;
+
 }
 
 
@@ -59,24 +64,9 @@ navbar at the top, split into two parts */
     gap: 10px;
     padding: 15px;
     align-items: center;
-
 }
 
-/* Section highlighting recent drops */
-#recent_product_showcase{
-    /* border: red solid; */
-}
-
-/* container for picture items */
-#showcase_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 1000px;
-    width: 100vw;
-     margin-top: 20px;  
-}
-
+/* ulility classes for text */
 
 .navbar_text {
     font-family: Helvetica, sans-serif;
@@ -86,4 +76,49 @@ navbar at the top, split into two parts */
 
 .text-white {
     color: white;
+}
+
+
+
+.recent_products_showcase_header {
+    margin: 0px;
+    background-color: none;
+    font-family: Helvetica, sans-serif;
+    font-style: bold;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Gasoek One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+
+
+}
+
+.recent_products_showcase_text {
+    margin: 0px;
+    background-color: none;
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(108, 108, 111);
+
+
+}
+
+
+
+
+/* fonts imported */
+.gasoek-one-regular {
+    font-family: "Gasoek One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+a p {
+    text-align: center;
+    color: rgb(11, 11, 11);
 }

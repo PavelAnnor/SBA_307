@@ -1,154 +1,127 @@
-
 /* Section highlighting recent drops */
-#recent_product_showcase{
+#recent_product_showcase {
     /* border: red solid; */
 }
 
 /* container for picture items */
-#showcase_container{
+#showcase_container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 1000px;
     width: 100vw;
-     margin-top: 20px;  
+    margin-top: 20px;
 }
 
 /* items in container  */
-.showcase_container_item{
+.showcase_container_item {
     border: solid blue 2px;
     width: 28%;
     position: relative;
     /* height: 40%; */
-    display: flex; 
+    display: flex;
     background-repeat: no;
     background-size: 100% 100%;
     aspect-ratio: 0.75;
     align-items: flex-end;
-    transition: 1s;   
+    transition: 1s;
 }
 
-/* added transition, grow slightly larger and move above other shiblings to be better viewable */
-.showcase_container_item:hover{
+/* added first transition, grow slightly larger and move above other siblings to be better viewable */
+.showcase_container_item:hover {
     transform: scale(1.2);
     z-index: 3;
 }
 
-
-
-
 /* offsetting items to give design  */
-#showcase_item_1{
-    background-color: green;
+#showcase_item_1 {
+    border: solid rgb(94, 92, 92) 4px;
     top: -18%;
-    left: 5%; 
+    left: 5%;
 }
 
-#showcase_item_2{
-    background-color: rgb(18, 56, 244);
+#showcase_item_2 {
+    border: solid rgb(108, 167, 223) 4px;
 }
 
-#showcase_item_3{
-    background-color: rgb(214, 244, 18);
-    aspect-ratio: 0.8;
+#showcase_item_3 {
+    border: solid rgb(122, 49, 12) 4px;
     top: 18%;
-    right:5%;
+    right: 5%;
 }
 
 
 
-
-
-
-
-
-
-/* ulility classes for text */
-
-
-.recent_products_showcase_header{
-    margin: 0px;
-    background-color: none;
-    font-family: Helvetica, sans-serif;
-    font-style: bold;
-    font-size: 50px;
-    text-align: center;
-    font-family: "Gasoek One", sans-serif;
-     font-weight: 100;
-  font-style: normal;
-
-
-}
-
-.recent_products_showcase_text{
-    margin: 0px;
-    background-color: none;
-    font-family: Helvetica, sans-serif;
-    font-style: italic;
-    font-size: 25px;
-    text-align: center;
-    color: rgb(108, 108, 111);
-
-
-}
-
-
-
-
-/* fonts imported */
-
-.gasoek-one-regular {
-  font-family: "Gasoek One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-#slideshow{
-
+/* 
+section with the autoplay video/slideshow */
+#slideshow {
     width: 100%;
     height: 800px;
     padding: 0px;
     display: flex;
     background-color: black;
-
 }
 
-video{
+video {
     width: 100%;
     margin: 0px;
-    
 }
 
 
-#about_container{
+
+/* about section detailing info about company  */
+#about_container {
     display: flex;
     width: 100vw;
-    height: 500px;
-    
+    align-items: center;
+    padding: 20px;
     justify-content: space-evenly;
-    
+
 }
 
-.about_container_col{
+/* 3 major columns  */
+.about_container_col {
     width: 32%;
     height: 100%;
     text-align: center;
     padding: 20px;
-   
+    border: solid grey 2px;
+    background-color: rgb(253, 254, 255);
+   transition-property: background-color;
+   transition-duration: 2s;
 }
 
 
-.about_container_col_header{
+.about_container_col:hover{
 
+    background-color: rgb(144, 183, 238);
+
+
+}
+
+
+
+/* header text */
+.about_container_col_header {
     font-size: 20px;
     font-style: normal;
-    
-    
-
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.about_container_col img{
+.about_container_col img {
     width: 30%;
     height: auto;
 }
+
+
+
+#membership{
+    margin-top: 30px;
+}
+
+
+
+
+
+
 

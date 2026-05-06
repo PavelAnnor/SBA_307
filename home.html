@@ -6,20 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="./styles/home.css">
-    <link rel = "stylesheet" href  = "./styles/gerneral.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
 
     <style>
-
-        #about h1{
+        h1 {
             background-color: rgb(0, 0, 248);
             color: white;
             font-size: 60px;
         }
     </style>
+
+    <link rel="stylesheet" href="./styles/gerneral.css">
 </head>
 
 <body>
@@ -27,7 +33,7 @@
     <section id="navbar">
 
         <div id="upper_navbar">
-            <!-- might remove too simlar to nike and copy right lmaooo -->
+
             <img src="./assets/icons/jordon_logo-white.png" alt="">.
             <img src="./assets/icons/nike_logo-white.png" alt="">
 
@@ -35,18 +41,22 @@
             <a href="./register.html"><img src="./assets/icons/pfp_icon-white.png"></a>
         </div>
         <div id="lower_navbar">
-            <a href = "./home.html"><p class="navbar_text">Kicks2Go</p></a>
-            <p style="margin-left: auto;" class="navbar_text">Footwear</p>
-            <a href = "apparel.html"><p class="navbar_text">Apparel</p></a>
+            <a href="./home.html">
+                <p class="navbar_text">Kicks2Go</p>
+            </a>
+            <p style="margin-left: auto;" class="navbar_text">Apparel</p>
+            <a href="footwear.html">
+                <p class="navbar_text">Footwear</p>
+            </a>
             <p class="navbar_text">Contact</p>
         </div>
 
     </section>
 
 
-    <section id="slideshow" style = "margin-top: 0px;">
+    <section id="slideshow" style="margin-top: 130px;">
 
-        <video src="./assets/videos/vid2.mp4" autoplay muted loop ></video>
+        <video src="./assets/videos/vid2.mp4" autoplay muted loop></video>
 
 
     </section>
@@ -80,30 +90,116 @@
     </section>
 
 
-    <section id = "about">
+    <section id="about">
 
-        <h1 class = "recent_products_showcase_header">Why Kicks2Go?</h1>
-        
-        <div id = "about_container">
+        <h1 class="recent_products_showcase_header">Why Choose Kicks2Go?</h1>
 
-            <div class = "about_container_col">
+        <div id="about_container">
+
+            <div class="about_container_col">
                 <h3 class="about_container_col_header">Fast Shipping</h3>
-                <img src = "assets/icons/delivery-truck.png">
-                <p>Kicks2Go offers rapid shipping internationally. </p>
+                <img src="assets/icons/delivery-truck.png">
+                <p>Kicks2Go offers rapid shipping all over the globe. We pride ourselves on ensuring your order is
+                    processed and dispatched within hours.
+                    With reliable delivery partners and optimized logistics, customers can expect to recieve their
+                    purchases within a week.
+                    From checkout to your doorstep, we make speed and efficiency a core part of your shopping
+                    experience.
+                </p>
             </div>
 
-            <div class = "about_container_col">
+            <div class="separator"></div>
+
+            <div class="about_container_col">
+
                 <h3 class="about_container_col_header">Stellar Pricing</h3>
                 <img src="./assets/icons/money-bag (1).png" alt="">
+                <p>We keep our prices competitive by cutting out unnecessary markups and connecting you directly to
+                    authentic streetwear and sneakers.
+                    By streamlining our marketplace and working closely with trusted sellers, we’re able to offer deals
+                    that often beat platforms like StockX and GOAT.
+                    The result is premium drops and everyday heat at prices that make sense.
+                </p>
             </div>
 
-            <div class = "about_container_col">
+            <div class="separator"></div>
+
+            <div class="about_container_col">
                 <h3 class="about_container_col_header">Vast Array</h3>
-                <img src = "./assets/icons/running-shoe.png">
+                <img src="./assets/icons/running-shoe.png">
+                <p>Our marketplace brings together a diverse mix of streetwear, from globally recognized brands to
+                    underground labels you won’t find everywhere else.
+                    We curate everything from hyped releases to niche pieces, giving you access to styles that stand
+                    out.
+                    Whether it’s international exclusives or hard-to-find drops, we make it easy to discover something
+                    unique.
+                </p>
             </div>
 
-            
+
         </div>
+    </section>
+
+
+    <section id="membership">
+
+
+        <h1 class="recent_products_showcase_header">Kicks2Go Membership Levels</h1>
+
+       
+
+
+        <table class="table">
+            <thead>
+                <tr class="table-primary">
+                    <th scope="col">Membership Level</th>
+                    <th scope="col">Monthly Cost</th>
+                    <th scope="col">Benefits</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-dark">
+                    <th scope="row">None</th>
+                    <td>N/A</td>
+                    <td>N/A</td>
+
+                </tr>
+                <tr class="table-secondary">
+                    <th scope="row">Silver</th>
+                    <td>$15.99</td>
+                    <td>Free Shipping on orders over $499.99</td>
+
+                </tr>
+
+                <tr class="table-warning">
+                    <th scope="row">Gold</th>
+                    <td>$25.99</td>
+                    <td>Free Shipping on orders over $499.99+<br>
+                        1 Week early access to new drops
+
+                    </td>
+
+                </tr>
+
+
+                <tr class="table-info">
+                    <th scope="row">Diamond</th>
+                    <td>$45.99</td>
+                    <td>Free Shipping on orders over $499.99+<br>
+                        1 Week early access to new drops <br>
+                        Monthly Newsletter detailing the hottest apparel internationally
+
+
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
     </section>
 
 
